@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroFive.Forms.Images", "Ze
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroFive.Forms.Images.iOS", "ZeroFive.Forms.Images.iOS\ZeroFive.Forms.Images.iOS.csproj", "{7CEB5C50-F4ED-4894-9F7F-E37463889436}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroFive.Forms.Images.Droid", "ZeroFive.Forms.Images.Droid\ZeroFive.Forms.Images.Droid.csproj", "{E305F6D6-4338-49FC-801C-1CA28D391DBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{7CEB5C50-F4ED-4894-9F7F-E37463889436}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CEB5C50-F4ED-4894-9F7F-E37463889436}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CEB5C50-F4ED-4894-9F7F-E37463889436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E305F6D6-4338-49FC-801C-1CA28D391DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E305F6D6-4338-49FC-801C-1CA28D391DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E305F6D6-4338-49FC-801C-1CA28D391DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E305F6D6-4338-49FC-801C-1CA28D391DBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
