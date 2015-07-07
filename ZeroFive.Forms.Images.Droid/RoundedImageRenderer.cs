@@ -29,10 +29,7 @@ namespace ZeroFive.Forms.Images.Droid
         {
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="e"></param>
+
         protected override void OnElementChanged(ElementChangedEventArgs<Image> e)
         {
             base.OnElementChanged(e);

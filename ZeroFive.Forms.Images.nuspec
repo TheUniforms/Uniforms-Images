@@ -26,6 +26,12 @@
       <file src="ZeroFive.Forms.Images/bin/Release/ZeroFive.Forms.Images.dll" target="lib\portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\ZeroFive.Forms.Images.dll" />
       <file src="ZeroFive.Forms.Images/bin/Release/ZeroFive.Forms.Images.xml" target="lib\portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\ZeroFive.Forms.Images.xml" />
 
+      <!--Xamarin.Droid -->
+      <file src="ZeroFive.Forms.Images.Droid/bin/Release/ZeroFive.Forms.Images.Droid.dll" target="lib\MonoAndroid10\ZeroFive.Forms.Images.Droid.dll" />
+      <file src="ZeroFive.Forms.Images.Droid/bin/Release/ZeroFive.Forms.Images.Droid.xml" target="lib\MonoAndroid10\ZeroFive.Forms.Images.Droid.xml" />
+      <file src="ZeroFive.Forms.Images/bin/Release/ZeroFive.Forms.Images.dll" target="lib\MonoAndroid10\ZeroFive.Forms.Images.dll" />
+      <file src="ZeroFive.Forms.Images/bin/Release/ZeroFive.Forms.Images.xml" target="lib\MonoAndroid10\ZeroFive.Forms.Images.xml" />
+
       <!--Xamarin.iOS -->
       <file src="ZeroFive.Forms.Images.iOS/bin/Release/ZeroFive.Forms.Images.iOS.dll" target="lib\Xamarin.iOS10\ZeroFive.Forms.Images.iOS.dll" />
       <file src="ZeroFive.Forms.Images.iOS/bin/Release/ZeroFive.Forms.Images.iOS.xml" target="lib\Xamarin.iOS10\ZeroFive.Forms.Images.iOS.xml" />
