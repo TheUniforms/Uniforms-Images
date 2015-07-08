@@ -8,7 +8,6 @@
 
 # Restored packages
 /packages/*
-/ZeroFive.Forms.Images*/packages/*
 
 # Build results
 .builds

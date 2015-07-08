@@ -16,8 +16,9 @@ using ZeroFive.Forms.Images.Droid;
 
 namespace ZeroFive.Forms.Images.Droid
 {
+
     /// <summary>
-    /// ImageCircle Implementation
+    /// Rounded image renderer.
     /// </summary>
     [Preserve]
     public class RoundedImageRenderer : ImageRenderer
@@ -29,7 +30,9 @@ namespace ZeroFive.Forms.Images.Droid
         {
         }
 
-
+        /// <summary>
+        /// Handles the element changed event.
+        /// </summary>
         protected override void OnElementChanged(ElementChangedEventArgs<Image> e)
         {
             base.OnElementChanged(e);
@@ -45,9 +48,13 @@ namespace ZeroFive.Forms.Images.Droid
             }
         }
 
+        /// <summary>
+        /// Handles the element property changed event.
+        /// </summary>
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
+
             if (e.PropertyName == RoundedImage.BorderRadiusProperty.PropertyName ||
                 e.PropertyName == RoundedImage.BorderColorProperty.PropertyName ||
                 e.PropertyName == RoundedImage.BorderThicknessProperty.PropertyName)
@@ -57,42 +64,50 @@ namespace ZeroFive.Forms.Images.Droid
         }
 
         /// <summary>
-        /// 
+        /// Redraws the child.
         /// </summary>
-        /// <param name="canvas"></param>
-        /// <param name="child"></param>
-        /// <param name="drawingTime"></param>
-        /// <returns></returns>
         protected override bool DrawChild(Canvas canvas, global::Android.Views.View child, long drawingTime)
         {
             try
             {
-                var radius = Math.Min(Width, Height) / 2;
-                var strokeWidth = ((RoundedImage)Element).BorderThickness;
+                var radius = (float)((RoundedImage)Element).BorderRadius;
+                var stroke = (float)((RoundedImage)Element).BorderThickness;
+                var delta = (float)stroke / 2.0f;
 
-                radius -= strokeWidth / 2;
+                if (radius < 0)
+                {
+                    radius = Math.Min(Width, Height) / 2.0f;
+                }
 
+                radius -= delta;
+
+                // Clip with rounded rect
                 var path = new Path();
-                path.AddCircle(Width / 2, Height / 2, radius, Path.Direction.Ccw);
+//                path.AddCircle(Width / 2, Height / 2, radius, Path.Direction.Ccw);
+                path.AddRoundRect(new RectF(delta, delta, Width - delta, Height - delta),
+                    radius, radius, Path.Direction.Ccw);
                 canvas.Save();
                 canvas.ClipPath(path);
+                path.Dispose();
 
                 var result = base.DrawChild(canvas, child, drawingTime);
 
                 canvas.Restore();
 
+                // Add stroke for smoother border
                 path = new Path();
-                path.AddCircle(Width / 2, Height / 2, radius, Path.Direction.Ccw);
-
+//                path.AddCircle(Width / 2, Height / 2, radius, Path.Direction.Ccw);
+                path.AddRoundRect(new RectF(delta, delta, Width - delta, Height - delta),
+                    radius, radius, Path.Direction.Ccw);
                 var paint = new Paint();
                 paint.AntiAlias = true;
-                paint.StrokeWidth = strokeWidth;
+                paint.StrokeWidth = stroke;
                 paint.SetStyle(Paint.Style.Stroke);
                 paint.Color = ((RoundedImage)Element).BorderColor.ToAndroid();
-
                 canvas.DrawPath(path, paint);
-
                 paint.Dispose();
+
+                // Clean up
                 path.Dispose();
 
                 return result;
