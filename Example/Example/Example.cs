@@ -25,7 +25,7 @@ namespace Example
                         new RoundedImage
                         {
                             Source = "icon.png",
-                            BorderThickness = 0,
+                            BorderThickness = 4,
                             BorderRadius = 10,
                             HorizontalOptions = LayoutOptions.Center,
                             WidthRequest = 50,

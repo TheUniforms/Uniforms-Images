@@ -16,7 +16,6 @@ using ZeroFive.Forms.Images.Droid;
 
 namespace ZeroFive.Forms.Images.Droid
 {
-
     /// <summary>
     /// Rounded image renderer.
     /// </summary>
@@ -44,7 +43,6 @@ namespace ZeroFive.Forms.Images.Droid
                 {
                     SetLayerType(LayerType.Software, null);
                 }
-
             }
         }
 
@@ -83,8 +81,7 @@ namespace ZeroFive.Forms.Images.Droid
 
                 // Clip with rounded rect
                 var path = new Path();
-//                path.AddCircle(Width / 2, Height / 2, radius, Path.Direction.Ccw);
-                path.AddRoundRect(new RectF(delta, delta, Width - delta, Height - delta),
+                path.AddRoundRect(new RectF(delta, delta, Width - stroke, Height - stroke),
                     radius, radius, Path.Direction.Ccw);
                 canvas.Save();
                 canvas.ClipPath(path);
@@ -96,8 +93,7 @@ namespace ZeroFive.Forms.Images.Droid
 
                 // Add stroke for smoother border
                 path = new Path();
-//                path.AddCircle(Width / 2, Height / 2, radius, Path.Direction.Ccw);
-                path.AddRoundRect(new RectF(delta, delta, Width - delta, Height - delta),
+                path.AddRoundRect(new RectF(delta, delta, Width - stroke, Height - stroke),
                     radius, radius, Path.Direction.Ccw);
                 var paint = new Paint();
                 paint.AntiAlias = true;
