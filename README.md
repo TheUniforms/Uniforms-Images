@@ -1,7 +1,7 @@
 ZeroFive.Forms.Images
 =====================
 
-Custom images controls and helpers for Xamarin.Forms.
+Custom images controls and helpers for Xamarin.Forms
 
 Install
 -------
@@ -14,10 +14,12 @@ PM> Install-Package ZeroFive.Forms.Images
 
 You may also clone repository and add projects directly to your solution. Just don't forget to add references.
 
-RoundedImage
-------------
+Rounded Image
+-------------
 
 Extended `RoundedImage` class supports arbitrary border radius as well as border color and thickness.
+
+Available for **iOS** and **Android** in the moment.
 
 Usage:
 
