@@ -17,7 +17,7 @@ You may also clone repository and add projects directly to your solution. Just d
 Rounded Image
 -------------
 
-Extended `RoundedImage` class supports arbitrary border radius as well as border color and thickness.
+`RoundedImage` extends `Image` class and supports arbitrary border radius as well as border color and thickness.
 
 Available for **iOS** and **Android** in the moment.
 
