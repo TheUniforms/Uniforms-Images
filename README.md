@@ -19,7 +19,7 @@ Rounded Image
 
 `RoundedImage` extends `Image` class and supports arbitrary border radius as well as border color and thickness.
 
-Available for **iOS** and **Android** in the moment.
+Available for **iOS** and **Android** at the moment.
 
 Usage:
 
@@ -47,6 +47,8 @@ Usage:
     };
     ```
 
+If you need circle image, you may also specify `BorderRadius = -1.0` and it will be automatically set to half of the image size.
+
 Note the `Aspect` and `HorizontalOptions` parameters values, they could prevent unwanted stretching in layout.
 
-Based on [Xam.Plugins.Forms.ImageCircle](https://github.com/jamesmontemagno/Xamarin.Plugins/tree/master/ImageCircle) plugin.
+Based on [Xam.Plugins.Forms.ImageCircle](https://github.com/jamesmontemagno/Xamarin.Plugins/tree/master/ImageCircle) plugin and provides the same basic interface.
