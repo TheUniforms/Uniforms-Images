@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>ZeroFive.Forms.Images</id>
-       <version>0.2.1</version>
+       <version>0.3.0</version>
        <title>Custom Images Controls and Helpers for Xamarin.Forms</title>
        <authors>James Montemagno, Alexey Kinev</authors>
        <owners>Alexey Kinev</owners>
@@ -10,12 +10,12 @@
        <projectUrl>https://github.com/05Bit-Forms/Forms-Images</projectUrl>
        <requireLicenseAcceptance>false</requireLicenseAcceptance>
        <description>
-         Custom image control for your Xamarin.Forms with rounded corners. RoundedImage with customizable border radius, thickness and color. Ensure you call RoundedImageRenderer.Init() on each platform! Built against: 1.4.3.6374
+         Custom image controls for your Xamarin.Forms. RoundedImage with customizable border radius, thickness and color. TintedImage with tint effect (iOS only for now). Built against: 1.4.3.6376
        </description>
-       <summary>Use a Rounded Image in your Xamarin.Forms projects! Ensure you call RoundedImageRenderer.Init() on each platform!</summary>
+       <summary>Custom image controls for your Xamarin.Forms. Built against: 1.4.3.6376</summary>
        <tags>xamarin, pcl, android, xamarin.forms, ios</tags>
        <dependencies>
-         <dependency id="Xamarin.Forms" version="1.4.3.6374" />
+         <dependency id="Xamarin.Forms" version="1.4.3.6376" />
        </dependencies>
    </metadata>
    <files>

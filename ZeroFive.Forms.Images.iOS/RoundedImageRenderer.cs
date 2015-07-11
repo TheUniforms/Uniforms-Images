@@ -16,7 +16,7 @@ namespace ZeroFive.Forms.Images.iOS
     /// ImageCircle Implementation
     /// </summary>
     [Preserve]
-    public class RoundedImageRenderer : ImageRenderer
+    public class RoundedImageRenderer : TintedImageRenderer
     {
         /// <summary>
         /// Used for registration with dependency service
@@ -26,9 +26,8 @@ namespace ZeroFive.Forms.Images.iOS
         }
 
         /// <summary>
-        /// 
+        /// Handles the element changed event.
         /// </summary>
-        /// <param name="e"></param>
         protected override void OnElementChanged(ElementChangedEventArgs<Image> e)
         {
             base.OnElementChanged(e);
@@ -38,14 +37,14 @@ namespace ZeroFive.Forms.Images.iOS
                 UpdateBorder();
             }
         }
+
         /// <summary>
-        /// 
+        /// Handles the element property changed event.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
+
             if (e.PropertyName == VisualElement.HeightProperty.PropertyName ||
                 e.PropertyName == VisualElement.WidthProperty.PropertyName ||
                 e.PropertyName == RoundedImage.BorderRadiusProperty.PropertyName ||

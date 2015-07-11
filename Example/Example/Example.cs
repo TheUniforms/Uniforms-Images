@@ -8,6 +8,12 @@ namespace Example
     {
         public App()
         {
+            string icon = "icon.png";
+
+            Device.OnPlatform(() => {
+                icon = "Icon-Small-40.png";
+            });
+
             // The root page of your application
             MainPage = new ContentPage
             {
@@ -24,14 +30,21 @@ namespace Example
                         },
                         new RoundedImage
                         {
-                            Source = "icon.png",
+                            Source = icon,
                             BorderThickness = 4,
                             BorderRadius = 10,
                             HorizontalOptions = LayoutOptions.Center,
                             WidthRequest = 50,
                             HeightRequest = 40,
                             Aspect = Aspect.AspectFill,
+                        },
+                        #if __IOS__
+                        new TintedImage
+                        {
+                            Source = "wifi.png",
+                            TintColor = Color.Green,
                         }
+                        #endif
                     }
                 }
             };

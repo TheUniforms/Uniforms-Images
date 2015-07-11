@@ -6,7 +6,7 @@ namespace ZeroFive.Forms.Images
     /// <summary>
     /// Rounded image.
     /// </summary>
-    public class RoundedImage : Image
+    public class RoundedImage : TintedImage
     {
         /// <summary>
         /// Thickness property of border
