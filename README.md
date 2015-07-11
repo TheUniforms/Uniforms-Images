@@ -14,6 +14,11 @@ PM> Install-Package ZeroFive.Forms.Images
 
 You may also clone repository and add projects directly to your solution. Just don't forget to add references.
 
+Tinted Image
+------------
+
+`RoundedImage` extends `Image` and adds `TintColor` property. Available only for **iOS** at the moment.
+
 Rounded Image
 -------------
 
