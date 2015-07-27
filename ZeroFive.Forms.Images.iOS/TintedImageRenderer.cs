@@ -56,7 +56,7 @@ namespace ZeroFive.Forms.Images.iOS
         /// </summary>
         void UpdateTintcolor()
         {
-            if (Control.Image == null)
+            if ((Control == null) || (Control.Image == null))
             {
                 return;
             }

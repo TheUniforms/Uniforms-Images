@@ -57,6 +57,11 @@ namespace ZeroFive.Forms.Images.iOS
 
         private void UpdateBorder()
         {
+            if (Control == null)
+            {
+                return;
+            }
+
             try
             {
                 var radius = (Element as RoundedImage).BorderRadius;
