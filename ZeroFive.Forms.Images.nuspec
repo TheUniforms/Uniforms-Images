@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>ZeroFive.Forms.Images</id>
-       <version>0.3.2</version>
+       <version>0.3.3</version>
        <title>Custom Images Controls and Helpers for Xamarin.Forms</title>
-       <authors>James Montemagno, Alexey Kinev</authors>
+       <authors>Alexey Kinev</authors>
        <owners>Alexey Kinev</owners>
        <licenseUrl>https://raw.githubusercontent.com/05Bit-Forms/Forms-Images/master/LICENSE</licenseUrl>
        <projectUrl>https://github.com/05Bit-Forms/Forms-Images</projectUrl>
