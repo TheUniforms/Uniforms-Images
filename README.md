@@ -3,6 +3,8 @@ Uniforms.Images
 
 Custom images controls and helpers for Xamarin.Forms
 
+<p><img src="./Screenshots/screenshot1_iOS.jpg"> <img src="./Screenshots/screenshot1_Droid.jpg"></p>
+
 Install
 -------
 
