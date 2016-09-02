@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Uniforms.Images</id>
+    <version>0.3.4</version>
+    <title>Custom Images Controls and Helpers for Xamarin.Forms.</title>
+    <authors>Alexey Kinëv</authors>
+    <owners>Alexey Kinëv</owners>
+    <description>Custom image controls for your Xamarin.Forms. RoundedImage with customizable border radius, thickness and color. TintedImage with tint effect (iOS only for now).</description>
+    <summary>Custom image controls for your Xamarin.Forms.</summary>
+    <projectUrl>https://github.com/TheUniforms/Uniforms-Images</projectUrl>
+    <licenseUrl>https://github.com/TheUniforms/Uniforms-Images/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Beta</releaseNotes>
+    <copyright>Copyright 2016, 05Bit</copyright>
+    <tags>xamarin, utils, pcl, xamarin.forms, ios</tags>
+    <dependencies></dependencies>
+  </metadata>
+  <files>
+    <!--Portable-->
+    <file src="lib/Uniforms.Images.dll" target="lib/portable-net45+win+wp80+MonoAndroid10+xamarinios10" />
+    <file src="lib/Uniforms.Images.dll.mdb" target="lib/portable-net45+win+wp80+MonoAndroid10+xamarinios10" />
+
+    <!--Xamarin.iOS-->
+    <file src="lib/Uniforms.Images.dll" target="lib/xamarinios10" />
+    <file src="lib/Uniforms.Images.iOS.dll" target="lib/xamarinios10" />
+    <file src="lib/Uniforms.Images.iOS.dll.mdb" target="lib/xamarinios10" />
+
+    <!--Xamarin.Droid-->
+    <file src="lib/Uniforms.Images.dll" target="lib/MonoAndroid10" />
+    <file src="lib/Uniforms.Images.Droid.dll" target="lib/MonoAndroid10" />
+    <file src="lib/Uniforms.Images.Droid.dll.mdb" target="lib/MonoAndroid10" />
+  </files>
+</package>

@@ -19,6 +19,7 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+[Ll]ib/
 
 *_i.c
 *_p.c

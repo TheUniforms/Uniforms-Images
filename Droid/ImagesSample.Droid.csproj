@@ -102,11 +102,27 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\everest.jpg" />
+    <AndroidResource Include="Resources\drawable\freeman.jpg" />
+    <AndroidResource Include="Resources\drawable\peace_symbol.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\everest.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\freeman.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\peace_symbol.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\everest.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\freeman.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\peace_symbol.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\everest.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\freeman.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\peace_symbol.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Uniforms.Images\Uniforms.Images.csproj">
       <Project>{156FDC57-C82E-44CB-8FBE-3113BFCF8EA4}</Project>
       <Name>Uniforms.Images</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Uniforms.Images.Droid\Uniforms.Images.Droid.csproj">
+      <Project>{6845D5E0-E430-423A-B04D-F39A7AB8710E}</Project>
+      <Name>Uniforms.Images.Droid</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\ImagesSample\ImagesSample.projitems" Label="Shared" Condition="Exists('..\ImagesSample\ImagesSample.projitems')" />
