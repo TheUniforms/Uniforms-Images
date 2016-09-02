@@ -7,7 +7,7 @@
 
 BUILD_TOOL='/Applications/Xamarin Studio.app/Contents/MacOS/mdtool'
 NUGET_TOOL=`which nuget`
-PROJECT_BASE='Uniforms.Core'
+PROJECT_BASE='Uniforms.Images'
 OUTPUT_DIR='lib'
 
 build_nuget=false
@@ -80,5 +80,6 @@ if [ "$build_nuget" = true ] ; then
 
     "$NUGET_TOOL" pack -OutputDirectory $OUTPUT_DIR
 
-    echo "Use nuget tool to publish the package."
+    echo "Use nuget tool to publish the package:"
+    echo "nuget push $OUTPUT_DIR/Uniforms.Images.*.nupkg"
 fi
