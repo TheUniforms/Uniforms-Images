@@ -136,6 +136,9 @@
     <BundleResource Include="Resources\everest.jpg" />
     <BundleResource Include="Resources\everest%402x.jpg" />
     <BundleResource Include="Resources\everest%403x.jpg" />
+    <BundleResource Include="Resources\freeman.jpg" />
+    <BundleResource Include="Resources\freeman%402x.jpg" />
+    <BundleResource Include="Resources\freeman%403x.jpg" />
   </ItemGroup>
   <Import Project="..\ImagesSample\ImagesSample.projitems" Label="Shared" Condition="Exists('..\ImagesSample\ImagesSample.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

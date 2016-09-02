@@ -44,9 +44,9 @@ namespace Uniforms.Images.iOS
 
             if (e.PropertyName == VisualElement.HeightProperty.PropertyName ||
                 e.PropertyName == VisualElement.WidthProperty.PropertyName ||
-                e.PropertyName == RoundedImage.BorderRadiusProperty.PropertyName /*||
+                e.PropertyName == RoundedImage.BorderRadiusProperty.PropertyName ||
                 e.PropertyName == RoundedImage.BorderColorProperty.PropertyName ||
-                e.PropertyName == RoundedImage.BorderThicknessProperty.PropertyName*/) {
+                e.PropertyName == RoundedImage.BorderThicknessProperty.PropertyName) {
                 UpdateBorder();
             }
         }
@@ -58,17 +58,17 @@ namespace Uniforms.Images.iOS
             }
 
             try {
-                var radius = (Element as RoundedImage).BorderRadius;
+                var image = Element as RoundedImage;
+                var radius = image.BorderRadius;
 
                 if (radius < 0) {
                     radius = Math.Min (Element.Width, Element.Height) / 2.0;
                 }
 
                 Control.Layer.MasksToBounds = true;
-                //Control.ClipsToBounds = true;
                 Control.Layer.CornerRadius = (nfloat)radius;
-                //Control.Layer.BorderColor = ((RoundedImage)Element).BorderColor.ToCGColor();
-                //Control.Layer.BorderWidth = ((RoundedImage)Element).BorderThickness;
+                Control.Layer.BorderColor = image.BorderColor.ToCGColor();
+                Control.Layer.BorderWidth = image.BorderThickness;
             } catch (Exception ex) {
                 Debug.WriteLine ("RoundedImageRenderer: unable to create circle image: " + ex);
             }

@@ -16,22 +16,33 @@ namespace ImagesSample
                     Children = {
                         new Label {
                             HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Tinted image sample:"
+                            Text = "Circle image:"
                         },
-                        new TintedImage {
-                            Source="peace_symbol",
-                            TintColor=Color.Green
+                        new RoundedImage {
+                            Source = "freeman.jpg",
+                            Aspect = Aspect.AspectFill,
+                            HorizontalOptions = LayoutOptions.Center,
+                            BorderRadius = -1
                         },
                         new Label {
                             HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Rounded image sample:"
+                            Text = "Tinted image:"
+                        },
+                        new TintedImage {
+                            Source="peace_symbol",
+                            TintColor=Color.Green,
+                            HeightRequest=60
+                        },
+                        new Label {
+                            HorizontalTextAlignment = TextAlignment.Center,
+                            Text = "Rounded image:"
                         },
                         new RoundedImage {
                             Source = "everest.jpg",
                             Aspect = Aspect.AspectFill,
                             HorizontalOptions = LayoutOptions.Center,
                             BorderRadius = 25
-                        }
+                        },
                     }
                 }
             };

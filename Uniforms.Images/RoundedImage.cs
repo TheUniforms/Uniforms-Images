@@ -8,12 +8,11 @@ namespace Uniforms.Images
     /// </summary>
     public class RoundedImage : TintedImage
     {
-        /*
         /// <summary>
         /// Thickness property of border
         /// </summary>
         public static readonly BindableProperty BorderThicknessProperty =
-            BindableProperty.Create ("BorderThickness", typeof (double), typeof (RoundedImage), 0);
+            BindableProperty.Create ("BorderThickness", typeof (int), typeof (RoundedImage), 0);
 
         /// <summary>
         /// Border thickness of image
@@ -27,7 +26,7 @@ namespace Uniforms.Images
         /// Color property of border
         /// </summary>
         public static readonly BindableProperty BorderColorProperty =
-            BindableProperty.Create ("BorderColor", typeof (Color), typeof (RoundedImage), Color.White);
+            BindableProperty.Create ("BorderColor", typeof (Color), typeof (RoundedImage), Color.Default);
 
         /// <summary>
         /// Border Color of image
@@ -36,7 +35,6 @@ namespace Uniforms.Images
             get { return (Color)GetValue (BorderColorProperty); }
             set { SetValue (BorderColorProperty, value); }
         }
-        */
 
         /// <summary>
         /// The border radius property.
