@@ -1,5 +1,5 @@
-ZeroFive.Forms.Images
-=====================
+Uniforms.Images
+===============
 
 Custom images controls and helpers for Xamarin.Forms
 
@@ -9,7 +9,7 @@ Install
 Install via NuGet:
 
 ```
-PM> Install-Package ZeroFive.Forms.Images
+PM> Install-Package Uniforms.Images
 ```
 
 You may also clone repository and add projects directly to your solution. Just don't forget to add references.
@@ -38,7 +38,7 @@ Usage:
 2. Add `usage` statement and just use `RoundedImage` class:
 
     ```csharp
-    using ZeroFive.Forms.Images;
+    using Uniforms.Images;
 
     // ...
 
