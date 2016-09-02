@@ -56,24 +56,19 @@ namespace Uniforms.Images.iOS
         /// </summary>
         void UpdateTintcolor()
         {
-            if ((Control == null) || (Control.Image == null))
-            {
+            if ((Control == null) || (Control.Image == null)) {
                 return;
             }
 
-            var el = Element as TintedImage;
+            var image = Element as TintedImage;
 
-            if (el.TintColor == Color.Default)
-            {
-                if (Control.Image.RenderingMode == UIImageRenderingMode.AlwaysTemplate)
-                {
-                    Control.Image = Control.Image.ImageWithRenderingMode(UIImageRenderingMode.Automatic);
+            if (image.TintColor == Color.Default) {
+                if (Control.Image.RenderingMode == UIImageRenderingMode.AlwaysTemplate) {
+                    Control.Image = Control.Image.ImageWithRenderingMode (UIImageRenderingMode.Automatic);
                 }
-            }
-            else
-            {
-                Control.Image = Control.Image.ImageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate);
-                Control.TintColor = el.TintColor.ToUIColor();
+            } else {
+                Control.Image = Control.Image.ImageWithRenderingMode (UIImageRenderingMode.AlwaysTemplate);
+                Control.TintColor = image.TintColor.ToUIColor ();
             }
         }
     }

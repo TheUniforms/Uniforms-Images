@@ -11,7 +11,6 @@ using Xamarin.Forms.Platform.Android;
 using Uniforms.Images;
 using Uniforms.Images.Droid;
 
-
 [assembly: ExportRenderer(typeof(RoundedImage), typeof(RoundedImageRenderer))]
 
 namespace Uniforms.Images.Droid
@@ -20,12 +19,12 @@ namespace Uniforms.Images.Droid
     /// Rounded image renderer.
     /// </summary>
     [Preserve]
-    public class RoundedImageRenderer : ImageRenderer
+    public class RoundedImageRenderer : TintedImageRenderer
     {
         /// <summary>
         /// Used for registration with dependency service
         /// </summary>
-        public static void Init() 
+        public static new void Init() 
         {
         }
 

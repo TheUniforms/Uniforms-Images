@@ -84,4 +84,9 @@ Global
 		{555743AE-4674-4320-9C7F-FE444C6A5800}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{555743AE-4674-4320-9C7F-FE444C6A5800}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.VersionControlPolicy = $1
+		$1.inheritsSet = Mono
+	EndGlobalSection
 EndGlobal

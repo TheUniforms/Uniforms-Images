@@ -21,6 +21,7 @@ namespace ImagesSample.Droid
             base.OnCreate (bundle);
 
             global::Xamarin.Forms.Forms.Init (this, bundle);
+            Uniforms.Images.Droid.TintedImageRenderer.Init ();
             Uniforms.Images.Droid.RoundedImageRenderer.Init ();
 
             LoadApplication (new App ());
