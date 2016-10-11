@@ -19,7 +19,9 @@ You may also clone repository and add projects directly to your solution. Just d
 Tinted Image
 ------------
 
-`RoundedImage` extends `Image` and adds `TintColor` property. Available only for **iOS** at the moment.
+`TintedImage` extends `Image` and adds `TintColor` property.
+
+Available for **iOS** and **Android** at the moment.
 
 Rounded Image
 -------------
@@ -33,8 +35,17 @@ Usage:
 1. Init renderer in platform specific project like that:
 
     ```csharp
-    Xamarin.Forms.Forms.Init();
-    RoundedImageRenderer.Init();
+    #if __IOS__
+    Xamarin.Forms.Forms.Init ();
+    Uniforms.Images.iOS.RoundedImageRenderer.Init ();
+    Uniforms.Images.iOS.TintedImageRenderer.Init ();
+    #endif
+
+    #if __ANDROID__
+    Xamarin.Forms.Forms.Init (activity, bundle);
+    Uniforms.Images.Droid.RoundedImageRenderer.Init ();
+    Uniforms.Images.Droid.TintedImageRenderer.Init ();
+    #endif
     ```
 
 2. Add `usage` statement and just use `RoundedImage` class:
